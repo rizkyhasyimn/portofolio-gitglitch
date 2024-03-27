@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio | Rizky Hasyim N.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- myCSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<!-- NavBar START -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">Portfolio</a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Me</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Navbar END -->
+
+<body>
+    <!-- Jumbotron -->
+    <section class="jumbotron text-center" style="color: #114164;">
+        <img src="{{ url_for('static', filename='hasyim.png') }}" alt="Rizky-Hasyim" width="300" class="rounded-circle">
+        <h1 class="display-4">Rizky Hasyim Nugraha</h1>
+        <p class="lead">Student of LearningX</p>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#a2d9ff" fill-opacity="1"
+            d="M0,128L30,154.7C60,181,120,235,180,218.7C240,203,300,117,360,85.3C420,53,480,75,540,112C600,149,660,203,720,186.7C780,171,840,85,900,96C960,107,1020,213,1080,240C1140,267,1200,213,1260,181.3C1320,149,1380,139,1410,133.3L1440,128L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
+        </path>
+    </svg>
+    <!-- Jumbotron END -->
+
+    <!-- About -->
+    <section>
+        <div class="container">
+            <div class="row text-center mb-3">
+                <div class="col" style="color: #3992d1;">
+                    <h2>About Me</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center fs-5 text-center">
+                <div class="col-4 fw-bold">
+                    <p>I am a hard-working and driven individual who isn't afraid to face a challenge. I'm passionate
+                        about my work and I know how to get the job done.
+                    </p>
+                </div>
+                <div class="col-4 fw-bold">
+                    <p>I would describe myself as an open and honest
+                        person who doesn't believe in misleading other people and tries to be fair in everything I do.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#a2d9ff" fill-opacity="1"
+                d="M0,192L21.8,197.3C43.6,203,87,213,131,218.7C174.5,224,218,224,262,208C305.5,192,349,160,393,176C436.4,192,480,256,524,245.3C567.3,235,611,149,655,138.7C698.2,128,742,192,785,181.3C829.1,171,873,85,916,69.3C960,53,1004,107,1047,112C1090.9,117,1135,75,1178,74.7C1221.8,75,1265,117,1309,144C1352.7,171,1396,181,1418,186.7L1440,192L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#a2d9ff" fill-opacity="1"
+            d="M0,192L21.8,197.3C43.6,203,87,213,131,218.7C174.5,224,218,224,262,208C305.5,192,349,160,393,176C436.4,192,480,256,524,245.3C567.3,235,611,149,655,138.7C698.2,128,742,192,785,181.3C829.1,171,873,85,916,69.3C960,53,1004,107,1047,112C1090.9,117,1135,75,1178,74.7C1221.8,75,1265,117,1309,144C1352.7,171,1396,181,1418,186.7L1440,192L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z">
+        </path>
+    </svg>
+
+    <!-- About END -->
+
+    <!-- Education -->
+    <section>
+        <div class="container">
+            <div class="row text-center mb-3">
+                <div class="col">
+                    <h2 class="fw-bold" style="color: #3992d1;">Education</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center">
+                <div class="col-md-4 mb-3">
+                    <div class="portfolio-card">
+                        <img src="{{ url_for('static', filename='sman9.png') }}" class="card-img-top" alt="project 1">
+                        <div class="card-text">
+                            <br>
+                            <div class="fw-bold">SMA Negeri 9 Tangerang</div>
+                            <p>2018 - 2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="portfolio-card">
+                        <img src="{{ url_for('static', filename='budi_luhur.png') }}" class="card-img-top" alt="project 2">
+                        <div class="card-text">
+                            <br>
+                            <div class="fw-bold">Universitas Budi Luhur</div>
+                            <p>2021 - Present</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#a2d9ff" fill-opacity="1"
+            d="M0,96L16,90.7C32,85,64,75,96,112C128,149,160,235,192,261.3C224,288,256,256,288,224C320,192,352,160,384,160C416,160,448,192,480,186.7C512,181,544,139,576,106.7C608,75,640,53,672,64C704,75,736,117,768,128C800,139,832,117,864,138.7C896,160,928,224,960,256C992,288,1024,288,1056,250.7C1088,213,1120,139,1152,138.7C1184,139,1216,213,1248,224C1280,235,1312,181,1344,144C1376,107,1408,85,1424,74.7L1440,64L1440,320L1424,320C1408,320,1376,320,1344,320C1312,320,1280,320,1248,320C1216,320,1184,320,1152,320C1120,320,1088,320,1056,320C1024,320,992,320,960,320C928,320,896,320,864,320C832,320,800,320,768,320C736,320,704,320,672,320C640,320,608,320,576,320C544,320,512,320,480,320C448,320,416,320,384,320C352,320,320,320,288,320C256,320,224,320,192,320C160,320,128,320,96,320C64,320,32,320,16,320L0,320Z">
+        </path>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#a2d9ff" fill-opacity="1"
+            d="M0,96L16,90.7C32,85,64,75,96,112C128,149,160,235,192,261.3C224,288,256,256,288,224C320,192,352,160,384,160C416,160,448,192,480,186.7C512,181,544,139,576,106.7C608,75,640,53,672,64C704,75,736,117,768,128C800,139,832,117,864,138.7C896,160,928,224,960,256C992,288,1024,288,1056,250.7C1088,213,1120,139,1152,138.7C1184,139,1216,213,1248,224C1280,235,1312,181,1344,144C1376,107,1408,85,1424,74.7L1440,64L1440,0L1424,0C1408,0,1376,0,1344,0C1312,0,1280,0,1248,0C1216,0,1184,0,1152,0C1120,0,1088,0,1056,0C1024,0,992,0,960,0C928,0,896,0,864,0C832,0,800,0,768,0C736,0,704,0,672,0C640,0,608,0,576,0C544,0,512,0,480,0C448,0,416,0,384,0C352,0,320,0,288,0C256,0,224,0,192,0C160,0,128,0,96,0C64,0,32,0,16,0L0,0Z">
+        </path>
+    </svg>
+    <!-- Education END -->
+
+    <!-- Cards -->
+    <section>
+        <div class="container">
+            <div class="row text-center mb-3">
+                <div class="col">
+                    <h2 class="fw-bold" style="color: #3992d1;">My Portfolio</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center">
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <img src="{{ url_for('static', filename='project1.png') }}" class="card-img-top" alt="project 1">
+                        <div class="card-text">
+                            <h5>Portfolio 1</h5>
+                            <a href="#">See More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <img src="{{ url_for('static', filename='project2.png') }}" class="card-img-top" alt="project 2">
+                        <div class="card-text">
+                            <h5>Portfolio 2</h5>
+                            <a href="#">See More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <img src="{{ url_for('static', filename='project3.png') }}" class="card-img-top" alt="project 3">
+                        <div class="card-text">
+                            <h5>Portfolio 3</h5>
+                            <a href="#">See More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#a2d9ff" fill-opacity="1"
+                d="M0,320L10.4,309.3C20.9,299,42,277,63,250.7C83.5,224,104,192,125,192C146.1,192,167,224,188,218.7C208.7,213,230,171,250,138.7C271.3,107,292,85,313,96C333.9,107,355,149,376,144C396.5,139,417,85,438,90.7C459.1,96,480,160,501,176C521.7,192,543,160,563,138.7C584.3,117,605,107,626,106.7C647,107,668,117,689,122.7C709.6,128,730,128,751,138.7C772.2,149,793,171,814,176C834.8,181,856,171,877,181.3C897.4,192,918,224,939,224C960,224,981,192,1002,192C1022.6,192,1043,224,1064,213.3C1085.2,203,1106,149,1127,138.7C1147.8,128,1169,160,1190,170.7C1210.4,181,1231,171,1252,170.7C1273,171,1294,181,1315,181.3C1335.7,181,1357,171,1377,149.3C1398.3,128,1419,96,1430,80L1440,64L1440,320L1429.6,320C1419.1,320,1398,320,1377,320C1356.5,320,1336,320,1315,320C1293.9,320,1273,320,1252,320C1231.3,320,1210,320,1190,320C1168.7,320,1148,320,1127,320C1106.1,320,1085,320,1064,320C1043.5,320,1023,320,1002,320C980.9,320,960,320,939,320C918.3,320,897,320,877,320C855.7,320,835,320,814,320C793,320,772,320,751,320C730.4,320,710,320,689,320C667.8,320,647,320,626,320C605.2,320,584,320,563,320C542.6,320,522,320,501,320C480,320,459,320,438,320C417.4,320,397,320,376,320C354.8,320,334,320,313,320C292.2,320,271,320,250,320C229.6,320,209,320,188,320C167,320,146,320,125,320C104.3,320,83,320,63,320C41.7,320,21,320,10,320L0,320Z">
+            </path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#a2d9ff" fill-opacity="1"
+                d="M0,320L10.4,309.3C20.9,299,42,277,63,250.7C83.5,224,104,192,125,192C146.1,192,167,224,188,218.7C208.7,213,230,171,250,138.7C271.3,107,292,85,313,96C333.9,107,355,149,376,144C396.5,139,417,85,438,90.7C459.1,96,480,160,501,176C521.7,192,543,160,563,138.7C584.3,117,605,107,626,106.7C647,107,668,117,689,122.7C709.6,128,730,128,751,138.7C772.2,149,793,171,814,176C834.8,181,856,171,877,181.3C897.4,192,918,224,939,224C960,224,981,192,1002,192C1022.6,192,1043,224,1064,213.3C1085.2,203,1106,149,1127,138.7C1147.8,128,1169,160,1190,170.7C1210.4,181,1231,171,1252,170.7C1273,171,1294,181,1315,181.3C1335.7,181,1357,171,1377,149.3C1398.3,128,1419,96,1430,80L1440,64L1440,0L1429.6,0C1419.1,0,1398,0,1377,0C1356.5,0,1336,0,1315,0C1293.9,0,1273,0,1252,0C1231.3,0,1210,0,1190,0C1168.7,0,1148,0,1127,0C1106.1,0,1085,0,1064,0C1043.5,0,1023,0,1002,0C980.9,0,960,0,939,0C918.3,0,897,0,877,0C855.7,0,835,0,814,0C793,0,772,0,751,0C730.4,0,710,0,689,0C667.8,0,647,0,626,0C605.2,0,584,0,563,0C542.6,0,522,0,501,0C480,0,459,0,438,0C417.4,0,397,0,376,0C354.8,0,334,0,313,0C292.2,0,271,0,250,0C229.6,0,209,0,188,0C167,0,146,0,125,0C104.3,0,83,0,63,0C41.7,0,21,0,10,0L0,0Z">
+            </path>
+        </svg>
+    </section>
+    <!-- Cards END -->
+
+    <!-- Form -->
+    <section id="Contact">
+        <div class="container">
+            <div class="row text-center mb-3">
+                <div class="col">
+                    <h2 class="fw-bold" style="color: #3992d1;">Contact Me</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name:</label>
+                            <input type="text" class="form-control" id="name" aria-describedby="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pesan" class="form-label">Comment:</label>
+                            <textarea class="form-control" id="pesan" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Form END -->
+
+    <!-- Footer -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#0d6efd" fill-opacity="1"
+            d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+    </svg>
+
+    <footer class="bg-primary text-white text-center pb-3">
+        <p class="fw-bold">2024 © Rizky Hasyim Nugraha</p>
+    </footer>
+    <!-- Footer END -->
+
+</body>
+
+</html>
